@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGame;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,8 @@ namespace WpfApp1
     /// </summary>
     public partial class App : Application
     {
+        public static MainWindow mainWindow;
+        public static string Complexity = "Normal";
+        public static string Brightness = "Normal";
     }
 }

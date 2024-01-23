@@ -11,30 +11,29 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Margin="5" Orientation="Horizontal">
-                <TextBlock FontSize="36">
+                <TextBlock FontSize="36" Name="BrightnessTb">
                     Яркость:
                 </TextBlock>
-                <ComboBox Margin="57,10,10,10" Width="150">
-                    <ComboBoxItem>Очень темно</ComboBoxItem>
-                    <ComboBoxItem>немного темновато</ComboBoxItem>
-                    <ComboBoxItem>нормально</ComboBoxItem>
-                    <ComboBoxItem>светло</ComboBoxItem>
-                    <ComboBoxItem>очень ярко</ComboBoxItem>
+                <ComboBox Margin="57,10,10,10" Width="150" Name="BrightnessCb" SelectionChanged="BrightnessCb_SelectionChanged">
+                    <ComboBoxItem>Темно</ComboBoxItem>
+                    <ComboBoxItem>Нормально</ComboBoxItem>
+                    <ComboBoxItem>Светло</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
             <StackPanel Margin="5" Orientation="Horizontal">
                 <TextBlock FontSize="36">
                     Сложность:
                 </TextBlock>
-                <ComboBox Margin="10" Width="150">
+                <ComboBox Margin="10" Width="150" x:Name="ComplexityCb">
                     <ComboBoxItem>Легко</ComboBoxItem>
                     <ComboBoxItem>Нормально</ComboBoxItem>
                     <ComboBoxItem>Сложно</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
-            <Button Name="Testimonial" Background="{x:Null}" Margin="5,20,5,5" FontSize="20" >Оставить отзыв</Button>
-            <Button Name="Creators" Background="{x:Null}" Margin="5" FontSize="20" >Создатели</Button>
-            <Button Name="BackMenu" Background="{x:Null}" Margin="5 20" FontSize="20" Click="BackMenu_Click" >Назад</Button>
+            <Button Name="ApplicationBtn" Background="{x:Null}" Margin="5,15" FontSize="20" Click="ApplicationBtn_Click">Применить изменения</Button>
+            <Button Name="TestimonialBtn" Background="{x:Null}" Margin="5" FontSize="20" >Оставить отзыв</Button>
+            <Button Name="CreatorsBtn" Background="{x:Null}" Margin="5" FontSize="20" >Создатели</Button>
+            <Button Name="BackMenuBtn" Background="{x:Null}" Margin="5 15" FontSize="20" Click="BackMenu_Click" >Назад</Button>
         </StackPanel>
     </Grid>
 </Page>
